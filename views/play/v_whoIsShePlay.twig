@@ -1,0 +1,80 @@
+<center>
+    <form style="display: inline" method="post" action="{{ path }}index.php/play/whoIsShePlay">
+        <input name="tocken"  type="hidden" value="{{ tocken }}"/>
+        <input name="juste"  type="hidden"
+                {% if starTab[0] == starChoisi %}
+                    value="true"
+                {%  else %}
+                    value="false"
+                {%  endif %}
+        />
+        <input style="text-align: center;
+                        vertical-align: middle;
+                        line-height: 5px;
+                        display: inline-block;
+                        font-size: 16px;
+                        height: 26px;"
+
+               id="submit" type="submit" name="ready" value="{{ starTab[0] }}" />
+    </form>
+
+    <form style="display: inline" method="post" action="{{ path }}index.php/play/whoIsShePlay">
+        <input name="tocken"  type="hidden" value="{{ tocken }}"/>
+        <input name="juste"  type="hidden"
+        {% if starTab[1] == starChoisi %}
+         value="true"
+        {%  else %}
+        value="false"
+        {%  endif %}
+        />
+                <input style="text-align: center;
+                        vertical-align: middle;
+                        line-height: 5px;
+                        display: inline-block;
+                        font-size: 16px;
+                        height: 26px;"
+
+                        id="submit" type="submit" name="ready" value="{{ starTab[1] }}" />
+    </form>
+
+    <form style="display: inline" method="post" action="{{ path }}index.php/play/whoIsShePlay">
+        <input name="tocken"  type="hidden" value="{{ tocken }}"/>
+        <input name="juste"  type="hidden"
+                {% if starTab[2] == starChoisi %}
+                value="true"
+                {%  else %}
+                value="false"
+                {%  endif %}/>
+        <input style="text-align: center;
+                    vertical-align: middle;
+                    line-height: 5px;
+                    display: inline-block;
+                    font-size: 16px;
+                    height: 26px;"
+
+                id="submit" type="submit" name="ready" value="{{ starTab[2] }}" />
+    </form>
+
+    <form style="display: inline" method="post" action="{{ path }}index.php/play/whoIsShePlay">
+        <input name="tocken"  type="hidden" value="{{ tocken }}"/>
+        <input name="juste"  type="hidden"
+                {% if starTab[3] == starChoisi %}
+                value="true"
+                {%  else %}
+                value="false"
+                {%  endif %}/>
+        <input  style="text-align: center;
+                        vertical-align: middle;
+                        line-height: 5px;
+                        display: inline-block;
+                        font-size: 16px;
+                        height: 26px;"
+
+                id="submit" type="submit" name="ready" value="{{ starTab[3] }}" />
+    </form>
+</center>
+
+<center>
+    <img src="{{ path }}models/starPic/{{ nomImage }}" alt="{{ path }}models/starPic/{{ nomImage }}"
+         height="30%" width="20%">
+</center>

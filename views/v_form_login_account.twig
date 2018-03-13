@@ -1,0 +1,22 @@
+<form method="post" action="{{ path }}index.php/account/validFormLogin">
+    <div class="row">
+        <fieldset>
+            <h1 style="color:white;text-align: center">Login</h1>
+            <label>Username
+                <input name="pseudo"  type="text"  size="25" style="border-radius: 5px;" value="{{donnees.pseudo}}"/>
+                {% if erreurs.pseudo is defined %}
+                    <small class="error">{{erreurs.pseudo}}</small>
+                {% endif %}
+            </label>
+
+            <label>Password
+                <input name="mdp"  type="password"  size="18" style="border-radius: 5px;" value=""/>
+                {% if erreurs.mdp is defined %}
+                    <small class="error">{{erreurs.mdp}}</small>
+                {% endif %}
+            </label>
+
+            <input id="submitFormCompte" type="submit" name="signIn" value="Sign in" />
+            </fieldset>
+    </div>
+</form>

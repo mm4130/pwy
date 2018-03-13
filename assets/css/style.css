@@ -1,0 +1,275 @@
+.top-bar .name h1 a {
+  color: #d9534f;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+.top-bar-section ul li > a {
+  color: #d9534f;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;	
+}
+.top-bar .name h1 a:hover {
+  	color: #fff;
+}
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+	background: none repeat scroll 0% 0% #d9534f;
+}
+.top-bar-section li.active:not(.has-form) a:not(.button):hover {
+	background: none repeat scroll 0% 0% #222;
+}
+.jumbotron {
+	padding: 30px 15px;
+	margin-bottom: 30px;
+	color: inherit;
+	background-color: #EEE;
+}
+button, .button {
+    background-color: #d9534f;
+}
+button, .button:hover {
+    background-color: #d9534f;
+}
+button:hover, button:focus, .button:hover, .button:focus {
+    background-color: #222; 
+}
+footer {
+   width: 100%;
+   bottom: 0px;
+   left: 0px;
+   background-color: #333;
+   
+}
+
+body{
+    background-color: #1a1a1a;
+}
+p{
+    color : #f9f9f9;
+    font-size : 12px;
+}
+
+.showtable{
+    color : #f9f9f9;
+    font-size : 12px;
+    background-color: #1a1a1a;
+    border : none;
+    border-collapse: collapse;
+}
+
+.divText table caption{
+    background-color: #1a1a1a;
+    color : #f9f9f9;
+    font-size : 20px;
+}
+
+.divText table tr th{
+    background-color: #1a1a1a;
+    color : #f9f9f9;
+    font-size : 16px;
+}
+
+.divText table tr td{
+    background-color: #1a1a1a;
+    color : #f9f9f9;
+    font-size : 14px;
+    text-align : center;
+}
+
+.divText table, th, td {
+    border: 2px solid #000000;
+}
+.divText table, th, td a{
+    color : #f9f9f9;
+}
+.divText table, th, td a:hover{
+    color : #4f4f4f;
+}
+
+
+#divImage img{
+    margin: 0px;
+    padding:0px;
+    float: inherit;
+}
+
+#divImage {
+    height : 240px;
+    width : 310px;
+    margin: 0px;
+    padding:0px;
+}
+
+ul li{
+    margin-left : 5px;
+}
+
+form input{
+    padding: 2px;
+    margin: 2px;
+    height: 10px;
+}
+
+form input[type=text]{
+    height: 24px;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 16px;
+    padding-top : 0px;
+    padding-bottom : 0px;
+}
+
+form input[type=password]{
+    height: 24px;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 16px;
+    padding-top : 0px;
+    padding-bottom : 0px;
+}
+
+input[type=submit]{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 5px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+form label{
+    color: #f9f9f9;
+}
+
+#submitFormCompte{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 5px;
+    display: inline-block;
+    font-size: 16px;
+    height: 26px;
+}
+
+#myProgress {
+    position: relative;
+
+    vertical-align: middle;
+    display: inline-block;
+
+
+    width: 100px;
+    height: 15px;
+    background-color: grey;
+}
+#myBar {
+    position: absolute;
+    height: 100%;
+    background-color: yellow;
+}
+
+/*div pour les post de video */
+.divPostVideo{
+    border: #000000 1px solid;
+    font-size : 12px;
+    text-align : center;
+    float:left;
+    position: relative;
+    display:inline-block;
+    width : 330px;
+    height : 320px;
+    padding: 10px;
+}
+.divPostVideo a{
+    vertical-align: middle;
+    color : #f9f9f9;
+}
+.divPostVideo a:hover{
+    color : #4f4f4f;
+}
+
+.buttonNext{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border:none;
+    background-color: transparent;
+    height : 100px;
+    witdth : 100px;
+    float:left;
+    display : inline;
+    margin-left :15%;
+
+}
+.buttonPrev{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border:none;
+    background-color: transparent;
+    height : 100px;
+    witdth : 100px;
+    float:left;
+    display : inline;
+    margin-left : 35%;
+}
+
+.divContainerButtonPrevNext{
+    margin-top: 50px;
+    width:100%;
+    float: left;
+    position: relative;
+    display: block;
+}
+.divContainerButtonPrevNext form{
+    display: inline;
+}
+
+.divButtonWantMore{
+    display: block;
+    position: relative;
+    width : 330px;
+    height : 320px;
+    text-align: center;
+    margin-left: 40%;
+    padding-top: 50px;
+}
+
+.barMission{
+    width: 100%;
+    display: block;
+    background-color: crimson;
+}
+.barMission p{
+    font-size: 16px;
+    text-align: center;
+}
+
+.divText h1{
+    color: white;
+    text-align: center;
+}
+
+.divText p{
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+}
+.divText p a{
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.divText input[type=submit]{
+    text-align: center;
+    line-height: normal;
+    height : auto;
+    white-space: normal;
+    display: inline-block;
+    font-size: 50px;
+}

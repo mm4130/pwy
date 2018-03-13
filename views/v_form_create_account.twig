@@ -1,0 +1,38 @@
+<p style="text-align: center; font-size: 20px;">Create an account to save your progress in the rankings and play all the games in the site</p>
+<form method="post" action="{{path}}index.php/account/validFormCreateAccount">
+    <div class="row">
+        <fieldset>
+            <h1 style="color:white;text-align: center">Sign up</h1>
+
+            <label>Username
+                <input name="pseudo"  type="text"  size="25" style="border-radius: 5px;" value="{{donnees.pseudo}}"/>
+                {% if erreurs.pseudo is defined %}
+                <small class="error">{{erreurs.pseudo}}</small>
+                {% endif %}
+            </label>
+
+            <label>Password
+                <input name="mdp"  type="password"  size="18" style="border-radius: 5px;" value="{{donnees.mdp}}"/>
+                {% if erreurs.mdp is defined %}
+                    <small class="error">{{erreurs.mdp}}</small>
+                {% endif %}
+            </label>
+
+            <label>Confirm password
+                <input name="mdpConfirm"  type="password"  size="18"  style="border-radius: 5px;" value="{{donnees.mdpConfirm}}"/>
+                {% if erreurs.mdpConfirm is defined %}
+                    <small class="error">{{erreurs.mdpConfirm}}</small>
+                {% endif %}
+            </label>
+
+            <label>Sponsor
+                <input name="s"  type="text"  size="18" style="border-radius: 5px;" value="{{donnees.s}}"/>
+            </label>
+
+            <div class="g-recaptcha" data-sitekey="6Ld-zQ8UAAAAACo8BUj4osMIjJqNHc-2_vZIIN9x"></div>
+
+            <input id="submitFormCompte" type="submit" name="signUp" value="Sign up" />
+
+        </fieldset>
+    </div>
+</form>
