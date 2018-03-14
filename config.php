@@ -5,10 +5,10 @@ define("database","d9bkmcbl5j24vq");
 define("username","");
 define("password","");
 
-define("database_url", $(heroku config:get DATABASE_URL -a play-with-yourself))
+define("database_url", getenv('heroku config:get DATABASE_URL -a play-with-yourself'));
 
-//define('BASE_URL', explode('index.php', $_SERVER['SCRIPT_NAME'])[0]);
-define("BASE_URL","http://localhost/pwy/");
+define('BASE_URL', explode('index.php', $_SERVER['SCRIPT_NAME'])[0]);
+//define("BASE_URL","http://localhost/pwy/");
 
 define("default_controller","index");
 
