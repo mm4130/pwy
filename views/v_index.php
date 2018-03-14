@@ -11,7 +11,7 @@
         <br>
 
 
-    <p style="text-align: center; font-size: 40px; color: crimson">You must be 18 or more to enter this website</p>
+    <p style="text-align: center; font-size: 40px; color: crimson">You must be 18 or more to enter this website !</p>
 
     <br>
 
