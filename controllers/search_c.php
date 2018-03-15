@@ -17,7 +17,7 @@ class search
 
 
         $nbAlea = rand(1,100);
-        $searchName = array('teen', 'asian', 'hardcore', 'milf', 'babe');
+        $searchName = array('teen', 'asian', 'blonde', 'milf', 'babe', 'lesbian');
         $nbAleaSearchName = rand(0, count($searchName)-1);
         //search videos
         $url = "http://www.pornhub.com/webmasters/search?page=".$nbAlea."&search=".$searchName[$nbAleaSearchName]
