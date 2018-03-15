@@ -6,9 +6,9 @@ $requete="SELECT pseudo,lvl
         ORDER BY lvl DESC
         LIMIT 1;";
 try {
-    $prep=$db->pg_prepare($requete);
-    $prep->pg_execute();
-    $donneesBestFapper = $prep->pg_fetchAll();
+    $prep=$db->prepare($requete);
+    $prep->execute();
+    $donneesBestFapper = $prep->fetchAll();
 }
 catch ( Exception $e ) {
     echo "Erreur methode getBestFapper : ", $e->getMessage();

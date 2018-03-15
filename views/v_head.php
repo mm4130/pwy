@@ -1,5 +1,5 @@
 <?php
-//session_start(); TODO : remettre peut-etre
+session_start();
 
 if (!isset($_SESSION['connected']) && $_SESSION['guestConnected'] == false){
   $_SESSION['guestConnected'] = true;
