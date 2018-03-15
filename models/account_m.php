@@ -44,8 +44,7 @@ class account_m{
     }
 
     function readUnPseudo($pseudo){
-        $requete="SELECT *
-        FROM account WHERE pseudo=:pseudo LIMIT 1;";
+        $requete="SELECT * FROM account WHERE pseudo=:pseudo LIMIT 1;";
         try {
             $prep=$this->db->prepare($requete);
             $prep->bindParam(':pseudo',$pseudo,PDO::PARAM_INT);
