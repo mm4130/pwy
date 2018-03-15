@@ -88,7 +88,7 @@ class account
         //fais une recherche sql du pseudo -> si retourne rien, pseudo libre
         $donneesBdd = "";
         $donneesBdd = $this->instanceModelAccount->readUnPseudo($donnees['pseudo']);
-        if ($donneesBdd!=null) {
+        if ($donneesBdd!="") {
             $erreurs['pseudo'] = "This pseudo is already used, please choose another one.";
         }
 
