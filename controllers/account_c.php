@@ -28,7 +28,7 @@ class account
             return false; // Si aucun code n'est entré, on ne cherche pas plus loin
         }
         $params = [
-            'secret'    => '6Ld-zQ8UAAAAALhxNeVuNTNMp_L_4h-ow2OQxRxU',
+            'secret'    => '6Ldv8kwUAAAAALgagGacxyy9B4iUZdD2D1NisMDd',
             'response'  => $code
         ];
         if( $ip ){
